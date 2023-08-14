@@ -1,38 +1,162 @@
+body {
+  background-image: url('./images/back1.png');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  margin: 0;
+  background-color: #d3e0e4;
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 400px;
+  margin: 0 auto;
+  background: #ffffff;
+  min-height: 100vh;
 }
-
-.App-link {
-  color: #61dafb;
+.logo {
+  width: 90px;
+  height: 90px;
+  margin-top: 30px;
 }
-
-@keyframes App-logo-spin {
+.c1 {
+  color: #195368;
+}
+.c2 {
+  color: #d3e0e4;
+}
+.c3 {
+  color: #edbe98
+}
+h2 {
+  font-size: calc(8px + 2vmin);
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+}
+.toyLogo {
+  height: 130px;
+  width: 130px;
+  pointer-events: none;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .toyLogo {
+    animation: toyLogo-spin infinite 10s linear;
+    animation-direction: alternate-reverse;
+  }
+}
+@keyframes toyLogo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(20deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-20deg);
   }
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+hr {
+  height: 2px;
+  width: 40px;
+  background-color: #195368;;
+  margin: 0 10px;
+}
+h4 {
+  color: #195368;
+  font-weight: 600;
+  font-size: calc(6px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: calc(30px + 2vmin);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #195368;
+}
+h3 {
+  font-family: 'Allura', cursive;
+  font-size: calc(12px + 2vmin);
+  margin: 0;
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btnLike {
+  border: none;
+  background: transparent;
+  margin: 0 10px 0 0;
+}
+
+.imgIcon {  
+  width: 30px;
+  height: 30px;
+}
+
+.btnRemove {
+  border: none;
+  background: transparent;
+  color: #195368;
+  margin: 0 10px 0 0;
+}
+.btnRemove:hover {
+  color: #099fb6;
+}
+.btnSlide {
+  margin: 15px;
+  color:  #195368;
+  border: 2px #195368 solid;
+  border-radius: 7px;
+  background: transparent;
+}
+.btnSlide:hover {
+  color: #099fb6;
+  border: 2px #099fb6 solid;
+}
+.btnDelete {
+  background-color: #195368;
+  border: none;
+  color: #ffffff;
+  border-radius: 20px;
+  margin: 30px;
+  padding: 8px 30px;
+  font-size: calc(2px + 2vmin);
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+.btnDelete:hover {
+  background-color: #099fb6;
+}
+.giftName {
+  font-size: calc(6px + 2vmin);
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #000000;
+  padding: 10px;
+}
+.like {
+  font-size: calc(4px + 2vmin);
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: #000000;
+  padding: 10px;
+}
+
+img {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
 }
